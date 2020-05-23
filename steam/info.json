@@ -1,0 +1,15 @@
+{
+    "author":[
+        "Javad Shafique (apple#0018)"
+    ],
+    "bot_version": [
+        3,
+        0,
+        0
+    ],
+    "description":"Function that takes a valid steam input (basicly any type of steam id or custom url) and returns all avalible information.",
+    "install_msg":":P",
+    "hidden":false,
+    "disabled":false,
+    "requirements":["requests"]
+}

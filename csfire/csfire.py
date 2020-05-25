@@ -57,9 +57,9 @@ class csfire(commands.Cog):
         self.bot = bot
 
     @commands.command(pass_context=True)
-    async def report(self, ctx):
+    async def evidence(self, ctx):
         """
-        !report implemented as [p]report
+        !evidence implemented as [p]evidence
         """
         embed=Embed(title="**THIS CHANNEL IS FOR EVIDENCE ONLY**", description="- Post the EVIDENCE\n - Post their steam profile link\n  - Mention what server they are on\n - And let us know what they are doing (cheating, trolling, griefing, etc)", color=0xe06100)
         embed.add_field(name="To report a player in-game", value="- Type !calladmin in-game\n - Select a player you would like to report\n - Type the reason for this report then press enter", inline=False)

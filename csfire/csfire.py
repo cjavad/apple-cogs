@@ -11,7 +11,7 @@ CSFIRE_SERVERS = {
         "ip":"steam://connect/{}"
     },
     "al":[
-        "74.91.121.176:27025",
+        "74.91.121.176:27015",
         "74.91.121.176:27025"
         ],
     "ch":[
@@ -32,24 +32,24 @@ CSFIRE_RULES = [
 ]
 
 CSFIRE_RANKS = [
-    {"name":"Silver 1", "value":"150 Points", "key":"s1"},
-    {"name":"Gold Nova 1", "value":"1150 Points", "key":"gn1"},
-    {"name":"Master Guardian Elite", "value":"3150 Points", "key":"mge"},
-    {"name":"Silver 2", "value":"250 Points", "key":"s2"},
+    {"name":"Silver 1", "value":"100 Points", "key":"s1"},
+    {"name":"Gold Nova 1", "value":"1050 Points", "key":"gn1"},
+    {"name":"Master Guardian Elite", "value":"4750 Points", "key":"mge"},
+    {"name":"Silver 2", "value":"1350 Points", "key":"s2"},
     {"name":"Gold Nova 2", "value":"1350 Points", "key":"gn2"},
-    {"name":"Distinguished Master Guardian", "value":"3750 Points", "key":"dmg"},
-    {"name":"Silver 3", "value":"450 Points", "key":"s3"},
+    {"name":"Distinguished Master Guardian", "value":"7550 Points", "key":"dmg"},
+    {"name":"Silver 3", "value":"350 Points", "key":"s3"},
     {"name":"Gold Nova 3", "value":"1550 Points", "key":"gn3"},
-    {"name":"Legendary Eagle", "value":"4500 Points", "key":"le"},
-    {"name":"Silver 4", "value":"650 Points", "key":"s4"},
+    {"name":"Legendary Eagle", "value":"8500 Points", "key":"le"},
+    {"name":"Silver 4", "value":"450 Points", "key":"s4"},
     {"name":"Gold Nova Master", "value":"1750 Points", "key":"gnm"},
-    {"name":"Legendary Eagle Master", "value":"6000 Points", "key":"lem"},
-    {"name":"Silver Elite", "value":"800 Points", "key":"se"},
-    {"name":"Master Guardian 1", "value":"2250 Points", "key":"mg1"},
-    {"name":"Supreme Master First Class", "value":"10000 Points", "key":"smfc"},
-    {"name":"Silver Elite Master", "value":"950 Points", "key":"sem"},
+    {"name":"Legendary Eagle Master", "value":"10000 Points", "key":"lem"},
+    {"name":"Silver Elite", "value":"600 Points", "key":"se"},
+    {"name":"Master Guardian 1", "value":"2450 Points", "key":"mg1"},
+    {"name":"Supreme Master First Class", "value":"15000 Points", "key":"smfc"},
+    {"name":"Silver Elite Master", "value":"850 Points", "key":"sem"},
     {"name":"Master Guardian 2", "value":"2750 Points", "key":"mg2"},
-    {"name":"The Global Elite", "value":"17500 Points", "key":"ge"}
+    {"name":"The Global Elite", "value":"18000 Points", "key":"ge"}
 ]
 
 class csfire(commands.Cog):
@@ -57,9 +57,9 @@ class csfire(commands.Cog):
         self.bot = bot
 
     @commands.command(pass_context=True)
-    async def report(self, ctx):
+    async def evidence(self, ctx):
         """
-        !report implemented as [p]report
+        !evidence implemented as [p]evidence
         """
         embed=Embed(title="**THIS CHANNEL IS FOR EVIDENCE ONLY**", description="- Post the EVIDENCE\n - Post their steam profile link\n  - Mention what server they are on\n - And let us know what they are doing (cheating, trolling, griefing, etc)", color=0xe06100)
         embed.add_field(name="To report a player in-game", value="- Type !calladmin in-game\n - Select a player you would like to report\n - Type the reason for this report then press enter", inline=False)
@@ -150,9 +150,9 @@ class csfire(commands.Cog):
         """
         !group implemented as [p]group
         """
-        embed = Embed(title="Steam Community :: Group :: CSFire Community", url="http://steamcommunity.com/groups/", description="", color=0xfdfaff)
+        embed = Embed(title="Steam Community :: Group :: CSFire Community", url="https://steamcommunity.com/groups/csfirecommunity", description="", color=0xfdfaff)
         embed.set_thumbnail(url="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/b0/x.jpg")
-        await ctx.message.channel.send("http://steamcommunity.com/groups/", embed=embed)
+        await ctx.message.channel.send("https://steamcommunity.com/groups/csfirecommunity", embed=embed)
     
     @commands.command(pass_context=True)
     async def connect(self, ctx):

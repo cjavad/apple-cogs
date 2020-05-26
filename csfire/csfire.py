@@ -71,7 +71,7 @@ class csfire(commands.Cog):
         """
         !rules implemented as [p]rules. Takes [Rule Number] as an argument.
         """
-        embed = Embed(title="**RULES**", color=FA8500)
+        embed = Embed(title="**RULES**", color=0xFA8500)
 
         # Check if a specific rule was been chosen
         args = ctx.message.content.split(" ")
@@ -99,7 +99,7 @@ class csfire(commands.Cog):
         """
         !rank implemented as [p]rank. Takes argument [rank key]/[rank name] to get one rank returned.
         """
-        embed = Embed(title="**Ranks**", color=FA8500)
+        embed = Embed(title="**Ranks**", color=0xFA8500)
         
         # Check if a specific rank was been chosen
         args = ctx.message.content.split(" ")
@@ -131,7 +131,7 @@ class csfire(commands.Cog):
         """
         !activity implemnted as [p]activity
         """
-        embed=Embed(title="**https://csfire.xyz/stats/**", url="https://csfire.xyz/stats/", color=FA8500)
+        embed=Embed(title="**https://csfire.xyz/stats/**", url="https://csfire.xyz/stats/", color=0xFA8500)
         embed.set_author(name="See your activity on")
         await ctx.message.channel.send(embed=embed)
         await ctx.message.delete()
@@ -141,7 +141,7 @@ class csfire(commands.Cog):
         """
         !appeal implemented as [p]appeal
         """
-        embed=Embed(title="**How to appeal your ban?**", description="- Post your steam profile link\n- Wait for an admin to reply\n- Do NOT tag admins or owners", color=FA8500)
+        embed=Embed(title="**How to appeal your ban?**", description="- Post your steam profile link\n- Wait for an admin to reply\n- Do NOT tag admins or owners", color=0xFA8500)
         await ctx.message.channel.send(embed=embed)
         await ctx.message.delete()
 
@@ -159,7 +159,7 @@ class csfire(commands.Cog):
         """
         !servers implemented as [p]connect. Takes 2 arguments [server number] and [server region] the latter is optional.
         """
-        embed = Embed(title="No server selected showing connection info", color=FA8500)
+        embed = Embed(title="No server selected showing connection info", color=0xFA8500)
 
         args = ctx.message.content.split(" ")[1:]
 
@@ -197,7 +197,7 @@ class csfire(commands.Cog):
         """
         Command on insolence requests sharing a gif on how to unprivate. [p]unprivate
         """
-        embed = Embed(title="Unprivating game details", color=FA8500)
+        embed = Embed(title="Unprivating game details", color=0xFA8500)
         embed.set_image(url="https://s.put.re/ZYs3eYf4.gif")
         await ctx.message.channel.send(embed=embed)
         await ctx.message.delete()
@@ -258,7 +258,7 @@ Creates a google link```
         """
         Command on Insolence's request sharing a gif on how to copy Steam URL. [p]copyurl
         """
-        embed = Embed(title="Copying your Steam Profile Link", color=FA8500)
+        embed = Embed(title="Copying your Steam Profile Link", color=0xFA8500)
         embed.set_image(url="https://i.imgur.com/M3LDnJm.gif")
         await ctx.message.channel.send(embed=embed)
         await ctx.message.delete()

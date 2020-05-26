@@ -345,7 +345,7 @@ class steam(commands.Cog):
                 icon = result["avatar"]
                 del result["avatar"]
 
-                embed = Embed(color=FA8500)
+                embed = Embed(color=0xFA8500)
                 embed.set_author(name=get_title_for_box(steam_reference, result["profile_name"]), url=result["profile_url"], icon_url=icon)
                 embed.set_footer(text="Results provided by Valve. Author: apple#0018")
 
@@ -379,7 +379,7 @@ class steam(commands.Cog):
                 
                 # Using less-faceit for -steam also
                 faceit = get_faceit_by_int64_or_nick(result["steamid64"])
-                faceit_embed = Embed(color=FA8500)
+                faceit_embed = Embed(color=0xFA8500)
 
                 if faceit:
                     faceit_embed.set_author(name="Found faceit profile {} for steam {}".format(faceit["nickname"], steam_reference), icon_url=faceit["avatar"])
@@ -475,7 +475,7 @@ class steam(commands.Cog):
                 del result["avatar"]
                 del result["skill_level_img"]
 
-                embed = Embed(color=FA8500)
+                embed = Embed(color=0xFA8500)
                 embed.set_author(name="Found faceit profile {} for steam {}".format(result["nickname"], steam_reference), icon_url=icon)
                 embed.set_footer(text="Results provided by Faceit. Author: apple#0018")
                 embed.set_thumbnail(url=thumb)

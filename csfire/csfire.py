@@ -150,7 +150,7 @@ class csfire(commands.Cog):
         """
         !group implemented as [p]group
         """
-        embed = Embed(title="Steam Community :: Group :: CSFIRE Community", url="https://steamcommunity.com/groups/csfirecommunity", description="", color=0xfdfaff)
+        embed = Embed(title="Steam Community :: Group :: CSFIRE Community", url="https://steamcommunity.com/groups/csfirecommunity", description="", color=0xFA8500)
         embed.set_thumbnail(url="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/b0/x.jpg")
         await ctx.message.channel.send("https://steamcommunity.com/groups/csfirecommunity", embed=embed)
     

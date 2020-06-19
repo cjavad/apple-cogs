@@ -1,6 +1,6 @@
 from redbot.core import commands
 
-class spam(commands.Cogs):
+class spam(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
        

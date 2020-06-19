@@ -1,0 +1,12 @@
+{
+    "author":[
+        "Javad Shafique (apple#0018)"
+    ],
+    "bot_version": [
+        3,
+        0,
+        0
+    ],
+    "description":"Spam command to spam discord users :=)",
+    "install_msg":"SPam away"
+}
